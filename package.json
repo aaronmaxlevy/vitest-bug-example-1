@@ -1,0 +1,29 @@
+{
+  "name": "@vitest/example-lit",
+  "type": "module",
+  "private": true,
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "coverage": "vitest run --coverage",
+    "dev": "vite",
+    "test": "vitest",
+    "list": "vitest list",
+    "test:ui": "vitest --ui"
+  },
+  "dependencies": {
+    "lit": "3.2.1"
+  },
+  "devDependencies": {
+    "@vitest/browser": "3.2.4",
+    "jsdom": "latest",
+    "playwright": "1.55.1",
+    "vite": "7.0.4",
+    "vitest": "3.2.4"
+  },
+  "stackblitz": {
+    "startCommand": "npm run test:ui"
+  }
+}
